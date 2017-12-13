@@ -1,4 +1,4 @@
-## ตรวจสอบคุณภาพโค้ด C# ด้วย CodeCracker ###
+## ตรวจสอบคุณภาพโค้ด C# ด้วย Code Cracker (ตัวอย่างโปรเจค) ###
 
 - https://github.com/code-cracker/code-cracker
 
@@ -14,13 +14,13 @@ dotnet new console --language C# --output src/Hello
 dotnet add src/Hello/Hello.csproj package CodeCracker.CSharp
 ```
 
-### 3. ตรวจสอบโค้ดด้วยคำสั่ง Build
+### 3. ตรวจสอบโค้ดด้วยคำสั่ง build
 
 ```
 dotnet build src/Hello/Hello.csproj
 ```
 
-### 4. โปรแกรมจะแสดง Warning พร้อมรหัส CXXXXX ดังนี้
+### 4. โปรแกรมจะแสดง warning + เลขบรรทัด พร้อมรหัส CXXXXX ดังนี้
 
 ```bash
 Program.cs(16,20): warning CS0219: The variable 'noVar' is assigned but its value is never used [/Users/wk/Source/DotNetCracker/src/Hello/Hello.csproj]
@@ -34,4 +34,6 @@ Program.cs(18,13): warning CC0008: You can use initializers in here. [/Users/wk/
     0 Error(s)
 ``` 
 
-### 5. ให้นำรหัส CXXXXX ไปตรวจสอบในเว็บไซต์ http://code-cracker.github.io/diagnostics.html 
+### 5. ให้นำรหัส CXXXXX ไปตรวจสอบในเว็บไซต์ http://code-cracker.github.io/diagnostics.html ว่าต้องแก้ไขอย่างไร
+
+### 6. แก้โค้ด, สั่ง build จนกว่า warning จะหมดหรือพอใจ
